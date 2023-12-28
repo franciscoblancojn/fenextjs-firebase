@@ -1,0 +1,62 @@
+{
+  "name": "fenextjs-firebase",
+  "version": "1.0.4",
+  "description": "",
+  "main": "./cjs/index.js",
+  "module": "./cjs/index.js",
+  "types": "./cjs/index.d.ts",
+  "scripts": {
+    "test": "bun test.ts",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "echo 'esm'",
+    "build:cjs": "tsc --module commonjs --outDir cjs",
+    "lint": "npx eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "flb": "npm run format && npm run lint && npm run build ",
+    "bun-i":"bun i",
+    "remove-bun-lockb":"rm -r bun.lockb",
+    "remove-node-module":"rm -r node_modules",
+    "remove":"npm run remove-node-module && npm run remove-bun-lockb",
+    "update-package":"ncu -u !next",
+    "update":"npm run update-package && npm run remove && npm run bun-i && npm run flb",
+    "u":"npm run update"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/franciscoblancojn/fenextjs-validator.git"
+  },
+  "keywords": [
+    "fenextjs",
+    "ts",
+    "validator"
+  ],
+  "author": "franciscoblancojn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/franciscoblancojn/fenextjs-validator/issues"
+  },
+  "homepage": "https://gitlab.com/franciscoblancojn/fenextjs-validator#readme",
+  "dependencies": {
+    "fenextjs-functions": "^1.0.19",
+    "firebase": "^10.4.0"
+  },
+  "files": [
+    "cjs",
+    "esm"
+  ],
+  "devDependencies": {
+    "@types/node": "20.7.0",
+    "@types/react": "18.2.23",
+    "@types/react-dom": "18.2.8",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "8.50.0",
+    "prettier": "^3.0.3",
+    "ts-loader": "^9.4.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
