@@ -1,6 +1,6 @@
 {
   "name": "fenextjs-firebase",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "",
   "main": "./cjs/index.js",
   "module": "./cjs/index.js",
@@ -40,23 +40,24 @@
   },
   "homepage": "https://github.com/franciscoblancojn/fenextjs-firebase#readme",
   "dependencies": {
-    "fenextjs-functions": "^1.0.19",
-    "firebase": "^10.4.0"
+    "fenextjs-functions": "^2.0.0",
+    "firebase": "^10.8.0"
   },
   "files": [
     "cjs",
     "esm"
   ],
   "devDependencies": {
-    "@types/node": "20.7.0",
-    "@types/react": "18.2.23",
-    "@types/react-dom": "18.2.8",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
-    "@typescript-eslint/parser": "^6.7.3",
-    "eslint": "8.50.0",
-    "prettier": "^3.0.3",
-    "ts-loader": "^9.4.4",
+    "@types/node": "20.11.16",
+    "@types/react": "18.2.55",
+    "@types/react-dom": "18.2.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "npm-check-updates": "^16.14.14",
+    "eslint": "8.56.0",
+    "prettier": "^3.2.5",
+    "ts-loader": "^9.5.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.3.3"
   }
 }
