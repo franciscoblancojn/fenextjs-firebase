@@ -1,6 +1,6 @@
 {
   "name": "fenextjs-firebase",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "",
   "main": "./cjs/index.js",
   "module": "./cjs/index.js",
@@ -20,7 +20,7 @@
     "remove-bun-lockb":"rm -r bun.lockb",
     "remove-node-module":"rm -r node_modules",
     "remove":"npm run remove-node-module && npm run remove-bun-lockb",
-    "update-package":"ncu -u !next",
+    "update-package": "ncu -u '/fenextjs.*$/'",
     "update":"npm run update-package && npm run remove && npm run bun-i && npm run flb",
     "u":"npm run update"
   },
@@ -40,8 +40,8 @@
   },
   "homepage": "https://github.com/franciscoblancojn/fenextjs-firebase#readme",
   "dependencies": {
-    "fenextjs-functions": "^2.0.0",
-    "firebase": "^10.8.0"
+    "fenextjs-functions": "5.0.0",
+    "firebase": "10.8.0"
   },
   "files": [
     "cjs",
@@ -51,13 +51,13 @@
     "@types/node": "20.11.16",
     "@types/react": "18.2.55",
     "@types/react-dom": "18.2.19",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "npm-check-updates": "^16.14.14",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "npm-check-updates": "16.14.14",
     "eslint": "8.56.0",
-    "prettier": "^3.2.5",
-    "ts-loader": "^9.5.1",
-    "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "prettier": "3.2.5",
+    "ts-loader": "9.5.1",
+    "tslib": "2.6.2",
+    "typescript": "5.3.3"
   }
 }
