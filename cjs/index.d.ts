@@ -26,4 +26,5 @@ export declare class FenextFirebase {
     onUploadBase64(base64: string): Promise<unknown>;
     onDelete(): Promise<unknown>;
     onGetBase64(props?: onGetBase64Props): Promise<unknown>;
+    onGetUrl(): Promise<unknown>;
 }

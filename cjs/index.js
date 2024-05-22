@@ -74,6 +74,18 @@ class FenextFirebase {
             return error;
         }
     }
+    async onGetUrl() {
+        try {
+            if (!this.ref) {
+                throw new Error("Not Load Ref");
+            }
+            const url = await (0, storage_1.getDownloadURL)(this.ref);
+            return url;
+        }
+        catch (error) {
+            return error;
+        }
+    }
 }
 exports.FenextFirebase = FenextFirebase;
 //# sourceMappingURL=index.js.map
