@@ -103,4 +103,17 @@ export class FenextFirebase {
             return error;
         }
     }
+    public async onGetUrl() {
+        try {
+            if (!this.ref) {
+                throw new Error("Not Load Ref");
+            }
+
+            const url = await getDownloadURL(this.ref);
+
+            return url;
+        } catch (error) {
+            return error;
+        }
+    }
 }
