@@ -41,8 +41,8 @@ export class FenextFirebaseDataBase {
             }
 
             const data = await get(child(this.ref, query ?? "/"));
-            
-            return await data.val()
+
+            return await data.val();
         } catch (error) {
             return error;
         }

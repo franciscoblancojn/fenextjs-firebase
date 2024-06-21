@@ -12,7 +12,7 @@ import {
     deleteObject,
     getBytes,
 } from "firebase/storage";
-import { FenextFirebaseConfigProps,  onGetBase64Props } from "./interface";
+import { FenextFirebaseConfigProps, onGetBase64Props } from "./interface";
 
 export interface FenextFirebaseStorageConstructorProps {
     app: firebase.app.App;
@@ -25,12 +25,12 @@ export class FenextFirebaseStorage {
     private storega: FirebaseStorage;
     private ref?: StorageReference;
 
-    constructor({ config,app }: FenextFirebaseStorageConstructorProps) {
+    constructor({ config, app }: FenextFirebaseStorageConstructorProps) {
         this.config = config;
         this.app = app;
         this.storega = this.getStorage();
     }
-    
+
     private getStorage() {
         return getStorage(this.app, this.config.storageUrl);
     }

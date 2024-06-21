@@ -20,9 +20,9 @@ export class FenextFirebase {
         this.config = config;
         this.app = this.getApp();
 
-        this.database = new FenextFirebaseDataBase({ app: this.app ,config});
+        this.database = new FenextFirebaseDataBase({ app: this.app, config });
 
-        this.storega = new FenextFirebaseStorage({ app: this.app ,config});
+        this.storega = new FenextFirebaseStorage({ app: this.app, config });
     }
 
     private getConfig() {
@@ -34,5 +34,4 @@ export class FenextFirebase {
             ? firebase.initializeApp(this.getConfig())
             : firebase.app();
     }
-
 }
