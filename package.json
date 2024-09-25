@@ -1,6 +1,6 @@
 {
   "name": "fenextjs-firebase",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "",
   "main": "./cjs/index.js",
   "module": "./cjs/index.js",
@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/franciscoblancojn/fenextjs-firebase#readme",
   "dependencies": {
-    "fenextjs-functions": "5.3.2",
+    "fenextjs-functions": "5.3.4",
     "firebase": "10.8.0"
   },
   "files": [
