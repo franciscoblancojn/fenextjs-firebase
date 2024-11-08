@@ -1,14 +1,14 @@
 import firebase from "firebase/compat/app";
 import {
     getDatabase,
-    ref,
+    ref as refDatabase,
     child,
     get,
     set,
     Database,
     DatabaseReference,
 } from "firebase/database";
-import { FenextFirebaseConfigProps } from "./interface";
+import { FenextFirebaseConfigProps } from "../interface";
 
 export interface FenextFirebaseDataBaseConstructorProps {
     app: firebase.app.App;
@@ -31,7 +31,7 @@ export class FenextFirebaseDataBase {
     }
 
     public Ref(path: string) {
-        this.ref = ref(this.database, path);
+        this.ref = refDatabase(this.database, path);
         return this;
     }
     public async onGet(query?: string) {

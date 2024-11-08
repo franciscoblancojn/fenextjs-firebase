@@ -7,12 +7,12 @@ import {
     StorageReference,
     getStorage,
     uploadString,
-    ref,
+    ref as refStorage,
     getDownloadURL,
     deleteObject,
     getBytes,
 } from "firebase/storage";
-import { FenextFirebaseConfigProps, onGetBase64Props } from "./interface";
+import { FenextFirebaseConfigProps, onGetBase64Props } from "../interface";
 
 export interface FenextFirebaseStorageConstructorProps {
     app: firebase.app.App;
@@ -36,7 +36,7 @@ export class FenextFirebaseStorage {
     }
 
     public Ref(path: string) {
-        this.ref = ref(this.storega, path);
+        this.ref = refStorage(this.storega, path);
         return this;
     }
 
