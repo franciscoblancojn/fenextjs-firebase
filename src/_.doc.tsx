@@ -2,6 +2,7 @@ export default {
     id: "FenextFirebase",
     name: "FenextFirebase",
     description: "Clase principal para inicializar y manejar las funcionalidades de Firebase en el proyecto, proporcionando acceso a la base de datos y al almacenamiento.",
+    useBreadcrumb:false,
     props: [
         {
             id: "config",
