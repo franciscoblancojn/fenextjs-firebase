@@ -19,7 +19,14 @@ export default {
             returns: {
                 type: "FenextFirebaseConfigProps",
                 description: "Objeto de configuración de Firebase.",
-            }
+            },
+            useExample: [
+                {
+                    text: "Establecer referencia y obtener datos",
+                    content: `const fb = new FenextFirebase({ config });
+fb.getConfig();`,
+                },
+            ]
         },
         {
             id: "getApp",
@@ -29,7 +36,14 @@ export default {
             returns: {
                 type: "firebase.app.App",
                 description: "Instancia de la aplicación de Firebase.",
-            }
+            },
+            useExample: [
+                {
+                    text: "Establecer referencia y obtener datos",
+                    content: `const fb = new FenextFirebase({ config });
+fb.getApp();`,
+                },
+            ]
         }
     ],
     // properties: [
