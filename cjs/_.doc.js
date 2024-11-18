@@ -1,16 +1,16 @@
-export default {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = {
     id: "FenextFirebase",
     name: "FenextFirebase",
-    description:
-        "Clase principal para inicializar y manejar las funcionalidades de Firebase en el proyecto, proporcionando acceso a la base de datos y al almacenamiento.",
+    description: "Clase principal para inicializar y manejar las funcionalidades de Firebase en el proyecto, proporcionando acceso a la base de datos y al almacenamiento.",
     useBreadcrumb: false,
     props: [
         {
             id: "config",
             type: "FenextFirebaseConfigProps",
             require: true,
-            description:
-                "Configuración necesaria para inicializar Firebase, incluyendo claves y URLs de Firebase.",
+            description: "Configuración necesaria para inicializar Firebase, incluyendo claves y URLs de Firebase.",
         },
     ],
     functions: [
@@ -18,8 +18,7 @@ export default {
             id: "getConfig",
             name: "getConfig",
             useImport: false,
-            description:
-                "Obtiene la configuración actual utilizada para inicializar Firebase.",
+            description: "Obtiene la configuración actual utilizada para inicializar Firebase.",
             returns: {
                 type: "FenextFirebaseConfigProps",
                 description: "Objeto de configuración de Firebase.",
@@ -36,8 +35,7 @@ fb.getConfig();`,
             id: "getApp",
             name: "getApp",
             useImport: false,
-            description:
-                "Obtiene la instancia de la aplicación de Firebase. Si no está inicializada, la crea.",
+            description: "Obtiene la instancia de la aplicación de Firebase. Si no está inicializada, la crea.",
             returns: {
                 type: "firebase.app.App",
                 description: "Instancia de la aplicación de Firebase.",
@@ -77,3 +75,4 @@ fenextFirebase.storega.Ref('/images/user1').onUploadBase64(base64Data);`,
         },
     ],
 };
+//# sourceMappingURL=_.doc.js.map
