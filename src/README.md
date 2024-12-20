@@ -1,0 +1,31 @@
+---
+breadcrumb: false
+---
+# FenextFirebase
+
+Clase principal para inicializar y manejar las funcionalidades de Firebase en el proyecto, proporcionando acceso a la base de datos y al almacenamiento.
+
+### Parámetros
+
+| Parámetro | Tipo | Requerido | Default | Descripcion |
+| --------- | ---- | --------- | ------- | ----------- |
+| config | FenextFirebaseConfigProps | sí |  | Configuración necesaria para inicializar Firebase, incluyendo claves y URLs de Firebase. |
+### Usos
+
+- Inicializar y usar la clase FenextFirebase
+
+```tsx copy
+const firebaseConfig = { /* Configuración de Firebase */ };
+const fenextFirebase = new FenextFirebase({ config: firebaseConfig });
+
+// Acceder a la base de datos
+fenextFirebase.database.Ref('/users').onGet();
+
+// Acceder al almacenamiento
+fenextFirebase.storega.Ref('/images/user1').onUploadBase64(base64Data);
+```
+
+[object Object]
+
+[object Object]
+
