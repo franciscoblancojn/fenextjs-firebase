@@ -1,6 +1,3 @@
----
-breadcrumb: false
----
 # FenextFirebase
 
 Clase principal para inicializar y manejar las funcionalidades de Firebase en el proyecto, proporcionando acceso a la base de datos y al almacenamiento.
@@ -25,7 +22,33 @@ fenextFirebase.database.Ref('/users').onGet();
 fenextFirebase.storega.Ref('/images/user1').onUploadBase64(base64Data);
 ```
 
-[object Object]
+## getConfig
 
-[object Object]
+Obtiene la configuración actual utilizada para inicializar Firebase.
+
+### Usos
+
+- Establecer referencia y obtener datos
+
+```tsx copy
+const fb = new FenextFirebase({ config });
+fb.getConfig();
+```
+
+
+
+## getApp
+
+Obtiene la instancia de la aplicación de Firebase. Si no está inicializada, la crea.
+
+### Usos
+
+- Establecer referencia y obtener datos
+
+```tsx copy
+const fb = new FenextFirebase({ config });
+fb.getApp();
+```
+
+
 
