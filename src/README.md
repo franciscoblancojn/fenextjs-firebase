@@ -4,22 +4,25 @@ Clase principal para inicializar y manejar las funcionalidades de Firebase en el
 
 ### Parámetros
 
-| Parámetro | Tipo | Requerido | Default | Descripcion |
-| --------- | ---- | --------- | ------- | ----------- |
-| config | FenextFirebaseConfigProps | sí |  | Configuración necesaria para inicializar Firebase, incluyendo claves y URLs de Firebase. |
+| Parámetro | Tipo                      | Requerido | Default | Descripcion                                                                              |
+| --------- | ------------------------- | --------- | ------- | ---------------------------------------------------------------------------------------- |
+| config    | FenextFirebaseConfigProps | sí        |         | Configuración necesaria para inicializar Firebase, incluyendo claves y URLs de Firebase. |
+
 ### Usos
 
-- Inicializar y usar la clase FenextFirebase
+-   Inicializar y usar la clase FenextFirebase
 
 ```tsx copy
-const firebaseConfig = { /* Configuración de Firebase */ };
+const firebaseConfig = {
+    /* Configuración de Firebase */
+};
 const fenextFirebase = new FenextFirebase({ config: firebaseConfig });
 
 // Acceder a la base de datos
-fenextFirebase.database.Ref('/users').onGet();
+fenextFirebase.database.Ref("/users").onGet();
 
 // Acceder al almacenamiento
-fenextFirebase.storega.Ref('/images/user1').onUploadBase64(base64Data);
+fenextFirebase.storega.Ref("/images/user1").onUploadBase64(base64Data);
 ```
 
 ## getConfig
@@ -28,14 +31,12 @@ Obtiene la configuración actual utilizada para inicializar Firebase.
 
 ### Usos
 
-- Establecer referencia y obtener datos
+-   Establecer referencia y obtener datos
 
 ```tsx copy
 const fb = new FenextFirebase({ config });
 fb.getConfig();
 ```
-
-
 
 ## getApp
 
@@ -43,12 +44,9 @@ Obtiene la instancia de la aplicación de Firebase. Si no está inicializada, la
 
 ### Usos
 
-- Establecer referencia y obtener datos
+-   Establecer referencia y obtener datos
 
 ```tsx copy
 const fb = new FenextFirebase({ config });
 fb.getApp();
 ```
-
-
-
