@@ -14,7 +14,7 @@ export class FenextFirebase {
 
     public database: FenextFirebaseDataBase;
 
-    public storega: FenextFirebaseStorage;
+    public storage: FenextFirebaseStorage;
 
     constructor({ config }: FenextFirebaseConstructorProps) {
         this.config = config;
@@ -22,7 +22,7 @@ export class FenextFirebase {
 
         this.database = new FenextFirebaseDataBase({ app: this.app, config });
 
-        this.storega = new FenextFirebaseStorage({ app: this.app, config });
+        this.storage = new FenextFirebaseStorage({ app: this.app, config });
     }
 
     private getConfig() {

@@ -11,12 +11,12 @@ class FenextFirebase {
     config;
     app;
     database;
-    storega;
+    storage;
     constructor({ config }) {
         this.config = config;
         this.app = this.getApp();
         this.database = new database_1.FenextFirebaseDataBase({ app: this.app, config });
-        this.storega = new storage_1.FenextFirebaseStorage({ app: this.app, config });
+        this.storage = new storage_1.FenextFirebaseStorage({ app: this.app, config });
     }
     getConfig() {
         return this.config;

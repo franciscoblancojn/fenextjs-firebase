@@ -10,7 +10,7 @@ export declare class FenextFirebase {
     private config;
     private app;
     database: FenextFirebaseDataBase;
-    storega: FenextFirebaseStorage;
+    storage: FenextFirebaseStorage;
     constructor({ config }: FenextFirebaseConstructorProps);
     private getConfig;
     private getApp;
