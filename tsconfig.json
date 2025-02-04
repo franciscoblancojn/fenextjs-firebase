@@ -1,5 +1,5 @@
 {
-    "include": ["src/*", "test/*"],
+    "include": ["src/*"],
     "exclude": [
         "cjs",
         "esm",
@@ -7,7 +7,7 @@
         "./node_modules",
         "./node_modules/*",
         "node_modules/*",
-        "_.doc.tsx"
+        "*.doc.tsx"
     ],
     "compilerOptions": {
         "module": "esnext",
